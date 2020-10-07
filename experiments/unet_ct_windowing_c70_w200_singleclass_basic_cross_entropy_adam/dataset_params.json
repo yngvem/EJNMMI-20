@@ -1,0 +1,28 @@
+{
+    "operator": "HDFDataset",
+    "arguments": {
+        "data_path": "C:\\Users\\yngvemoe\\Programming\\oar_datagen\\full_dataset_singleclass.h5",
+        "batch_size": [16, 32, 32],
+        "val_group": "val",
+        "dataset": "input",
+        "target": "target",
+        "preprocessor": {
+            "operator": "PreprocessingPipeline",
+            "arguments": {
+                "preprocessor_dicts": [
+                {
+                    "operator": "ChannelRemoverPreprocessor",
+                    "arguments": {"channel": 1}
+                },
+                {
+                    "operator": "HoundsfieldWindowingPreprocessor",
+                    "arguments": {
+                        "window_width": 100,
+                        "window_center": 70
+                    }
+                }
+                ]
+            }
+        }
+    }
+}

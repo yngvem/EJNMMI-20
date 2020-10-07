@@ -1,0 +1,11 @@
+{
+    "operator": "HDFDataset",
+    "arguments": {
+        "data_path": "C:\\Users\\yngvemoe\\Programming\\oar_datagen\\full_dataset_singleclass.h5",
+        "batch_size": [16, 32, 32],
+        "val_group": "val",
+        "dataset": "input",
+        "target": "target"
+    }
+
+}

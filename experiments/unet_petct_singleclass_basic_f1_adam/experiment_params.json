@@ -1,0 +1,1 @@
+{"log_dir": "./logs/", "name": "unet_petct_singleclass_basic_f1_adam", "continue_old": false, "verbose": 1}

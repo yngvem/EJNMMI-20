@@ -1,0 +1,17 @@
+{
+    "operator": "HDFDataset",
+    "arguments": {
+        "data_path": "C:\\Users\\yngvemoe\\Programming\\oar_datagen\\full_dataset_singleclass.h5",
+        "batch_size": [16, 32, 32],
+        "val_group": "val",
+        "dataset": "input",
+        "target": "target",
+        "preprocessor": {
+            "operator": "HoundsfieldWindowingPreprocessor",
+            "arguments": {
+                "window_width": 200,
+                "window_center": 70
+            }
+        }
+    }
+}

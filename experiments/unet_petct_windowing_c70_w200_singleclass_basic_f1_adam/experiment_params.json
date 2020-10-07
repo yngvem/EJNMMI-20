@@ -1,0 +1,1 @@
+{"log_dir": "./logs/", "name": "unet_petct_windowing_c70_w200_singleclass_basic_f1_adam", "continue_old": false, "verbose": 1}
